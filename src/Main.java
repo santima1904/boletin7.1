@@ -9,6 +9,7 @@ public class Main {
         //clase horas
         Hora horaPrueba = new Hora(0, 23, 56);
         horaPrueba.sumaSegundos(6);
+        System.out.println(horaPrueba.toString());
     }
 
 

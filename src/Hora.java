@@ -60,7 +60,11 @@ public class Hora {
                         }
                 }
         }
-        System.out.println(hora+":"+minutos+":"+segundos);
+        //System.out.println(hora+":"+minutos+":"+segundos);
     }
-    //TODO metodo toString
+
+    @Override
+    public String toString(){
+        return hora+":"+minutos+":"+segundos;
+    }
 }
