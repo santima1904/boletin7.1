@@ -2,7 +2,6 @@ public class Cuadrado {
     //Atributos
     private int lado;
 
-
     //Métodos
     public Cuadrado(){
         lado = 0;
@@ -22,15 +21,14 @@ public class Cuadrado {
     Entrada: int lado
     Salida: niguna
     Precondiciones: lado positivo
-    Postcondiciones: cuadrado pintado
+    Postcondiciones: se pintarara un cuadrado de asteriscos con el lado indicado
      */
-    public void printCuadrado(int lado){
-        int i, j;
-        for (i=1; i<=lado; i++){
-            for (j=1; j<=lado; j++){
-                System.out.println(" ");
+    public void printCuadrado(){
+        for (int i=1; i<=lado; i++){
+            for (int j=1; j<=lado; j++){
+                System.out.print("*");
             }
-            System.out.print("*");
+            System.out.println();
         }
     }
 }

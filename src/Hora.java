@@ -1,15 +1,3 @@
-/*
-Ejercicio 5:  Implementa una clase Hora, la cual tendrá como atributos:
-int hora
-int minutos
-int segundos
-y como métodos:
-Un constructor con parámetros
-Los setter y los getter
-Un método para sumar segundos a la hora.
-El método toString, mostrando la hora con el formato hh:mm:ss
- */
-
 public class Hora {
     //Atributos
     private int hora;
@@ -45,7 +33,7 @@ public class Hora {
    Entrada: int segundosASumar
    Salida: niguna
    Precondiciones: segundosASumar positivo
-   Postcondiciones: -
+   Postcondiciones: suma los segundos indicados
     */
     public void sumaSegundos(int segundosASumar){
         segundos=segundos+segundosASumar;
@@ -60,11 +48,13 @@ public class Hora {
                         }
                 }
         }
-        //System.out.println(hora+":"+minutos+":"+segundos);
+
     }
 
     @Override
     public String toString(){
+        //TODO toMinutos, toSegundos, toHoras con if
+
         return hora+":"+minutos+":"+segundos;
     }
 }
